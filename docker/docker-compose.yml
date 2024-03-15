@@ -1,0 +1,10 @@
+version: "3"
+name: llamaindex_study
+services:
+  rag_app:
+    build: .
+    working_dir: /app
+    volumes:
+      - ..:/app
+    tty: true
+    command: /bin/sh
