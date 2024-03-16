@@ -2,7 +2,7 @@ FROM python:3.11
 
 RUN apt update && \
     apt install -y locales tzdata cmake && \
-    pip install llama-index llama-cpp-python llama-index-llms-llama-cpp && \
+    pip install llama-index-llms-llama-cpp && \
     apt clean && \
     rm -rf /var/lib/apt/lists/*
     
